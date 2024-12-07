@@ -547,21 +547,24 @@
         </div>
       </section>
     </main>
+    <!-- Кнопка для открытия диалога -->
     <button
       type="button"
       class="save-button button"
       onclick="window['save-dialog'].showModal()"
       aria-controls="save-dialog"
     >
-      <svg class="floppy" viewBox="0 0 21 21">
-        <use href="./svg/floppy.svg#floppy"></use>
+      <svg class="floppy" viewBox="0 0 21 21" aria-hidden="true">
+        <use href="#floppy"></use>
       </svg>
       <span class="button__text">Сохранить на память</span>
     </button>
+
+    <!-- Диалоговое окно -->
     <dialog class="dialog" id="save-dialog">
       <div class="dialog__info">
-        <svg class="floppy" viewBox="0 0 21 21">
-          <use href="./svg/floppy.svg#floppy"></use>
+        <svg class="floppy" viewBox="0 0 21 21" aria-hidden="true">
+          <use href="#floppy"></use>
         </svg>
         <p class="dialog__label">Вставьте дискету,&nbsp;чтобы продолжить</p>
       </div>
@@ -571,6 +574,16 @@
         </button>
       </form>
     </dialog>
+
+    <!-- Добавление символа для дискетки -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="floppy" viewBox="0 0 21 21" fill="currentColor">
+        <rect width="1.61538" height="1.61538" fill="currentColor" />
+        <rect y="1.61523" width="1.61538" height="1.61538" fill="currentColor" />
+        <!-- Остальной код для иконки -->
+      </symbol>
+    </svg>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
