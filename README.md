@@ -1,4 +1,1 @@
-# zakrivayuschiy-teg-f
-
-Проект "Закрывающий тег"
-Link: https://github.com/Estisui/zakrivayuschiy-teg-f
+https://github.com/jeffors/zakrivayuschiy-teg-f.git
