@@ -69,5 +69,43 @@
         transparent 4px
       ),
       linear-gradient(180deg, #007f0c 0%, #004306 100%);
+
+.page.theme-light {
+  --normal-wght: 400;
+  --bold-wght: 700;
+
+  --bg-color: #FFF;
+  --accent-color: #000;
+
+  --bg-image: url(../svg/pattern-light.svg);
+
+  --heart-contour: #000;
+}
+
+
+.page.theme-dark {
+  --normal-wght: 465;
+  --bold-wght: 785;
+
+  --bg-color: #000;
+  --accent-color: #00CC14;
+
+  --bg-image: url(../svg/pattern-dark.svg);
+
+  --heart-contour: #00CC14;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --normal-wght: 465;
+    --bold-wght: 785;
+
+    --bg-color: #000;
+    --accent-color: #00CC14;
+
+    --bg-image: url(../svg/pattern-dark.svg);
+
+    --heart-contour: #00CC14;
   }
 }
